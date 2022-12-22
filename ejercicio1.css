@@ -1,0 +1,421 @@
+/* #BLACKcircle {
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    right: 50px; 
+    bottom: 50px;
+    left: 20px;
+    background-color: black;
+    border-radius: 50%
+  }
+ */
+
+/* #GREYcircle {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    right: 50px; 
+    bottom: 50px;
+    /* left: 20px; 
+    background-color: grey;
+    border-radius: 50%
+  }
+
+
+  .circle-overlaping{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    top: 0px;
+    left: 100px;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .circle-overlaping::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: yellow;
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+  }
+  
+  .circle-overlaping::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  } */
+
+/* EJERCICIO DE CLASE */
+h1 {
+  text-align: center;
+  /* font-size: 30px;
+    right: 150px; */
+}
+
+/* .center{ intento de centrar
+    top: 0px;
+    left: 300px;
+  } */
+
+.circles {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#red {
+  z-index: 5; /* indica profundidad */
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  background-color: red;
+}
+
+#green {
+  z-index: 5;
+  position: absolute;
+  top: 250px;
+  left: 150px;
+  background-color: green;
+}
+
+#lightGrey {
+  z-index: 5;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  background-color: lightgrey;
+}
+
+#grey {
+  z-index: 1;
+  position: absolute;
+  top: 150px;
+  left: 250px;
+  background-color: grey;
+}
+
+#black {
+  z-index: 1;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  background-color: black;
+}
+
+#orange { /* se copia RED, solo cambia el color,z-index, top*/
+  z-index: 2;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-color: orange;
+}
+
+#purple { /* se copia LIGHTGREY, solo cambia el color, z-index, top */
+  z-index: 2;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  background-color: purple;
+}
+
+#blue { /* se copia GREEN. solo cambia el color, z-index. top*/
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  background-color: blue;
+}
+
+/* EJERCICIO EXTRA */
+/* EJERCICIO 1 */
+.circles_1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid;
+}
+
+.circle_1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid;
+  position: absolute;
+  top: 700px;
+  left: 200px;
+}
+
+/* orden: izquierda, arriba-abajo */
+#one_1 {
+  position: absolute;
+  top: 700px;
+  left: 150px;
+}
+
+#two_1 { /* -1 z-index; +77 top, -30 left */
+  position: absolute;
+  top: 777px;
+  left: 120px;
+}
+
+#three_1 {
+  position: absolute;
+  top: 860px;
+  left: 122px;
+}
+
+#four_1 {
+  position: absolute;
+  top: 934px;
+  left: 162px;
+}
+
+#five_1 {
+  position: absolute;
+  top: 986px;
+  left: 230px;
+}
+
+#six_1 {
+  position: absolute;
+  top: 1005px;
+  left: 313px;
+}
+
+#seven_1 { /* copiar five_1, +80 left (diametro del circulo) */
+  position: absolute;
+  top: 986px;
+  left: 395px;
+}
+
+#eight_1 { /* copiar four_1, hacer lo mismo para left */
+  position: absolute;
+  top: 932px;
+  left: 460px;
+}
+
+#nine_1 { /* copiar three_1, hacer lo mismo para left */
+  position: absolute;
+  top: 857px;
+  left: 497px;
+}
+
+#ten_1 { /* copiar two_1, hacer lo mismo para left */
+  position: absolute;
+  top: 775px;
+  left: 500px;
+}
+
+#eleven_1 {
+  position: absolute;
+  top: 699px;
+  left: 468px;
+}
+
+#twelve_1 {
+  position: absolute;
+  top: 642px;
+  left: 408px;
+}
+
+#thirteen_1 {
+  position: absolute;
+  top: 617px;
+  left: 328px;
+}
+
+#fourteen_1 {
+  position: absolute;
+  top: 629px;
+  left: 245px;
+}
+
+/* EJERCICIO 2 */
+.circles_2 { /* el diametro del circulo es la mitad del circulo grande */
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  border: 3px solid;
+}
+
+.circle_2 {
+  width: 470px;
+  height: 470px;
+  border-radius: 50%;
+  border: 3px solid;
+  position: absolute;
+  top: 610px;
+  left: 700px;
+}
+
+#one_2 {
+  position: absolute;
+  top: 730px;
+  left: 702px;
+}
+
+#two_2 { /* casi +100 top, +50 left */
+  position: absolute;
+  top: 825px;
+  left: 751px;
+}
+
+#three_2 { /* +20 top, casi +80 left */
+  position: absolute;
+  top: 845px;
+  left: 830px;
+}
+
+#four_2 { /* copiar two_2, +55 left, -20 top */
+  position: absolute;
+  top: 825px;
+  left: 885px;
+}
+
+#five_2 { /* copiar one_2, cambiar left */
+  position: absolute;
+  top: 730px;
+  left: 935px;
+}
+
+#six_2 { /* copiar four_2, -200 top, +15 left */
+  position: absolute;
+  top: 645px;
+  left: 900px;
+}
+
+#seven_2 { /* copiar three_2, cambiar top*/
+  position: absolute;
+  top: 610px;
+  left: 830px;
+}
+
+#eight_2 { /* copiar six_2, -75 left */
+  position: absolute;
+  top: 645px;
+  left: 735px;
+}
+
+
+
+/* EJERCICIO 3 */
+.circles_3 { /* copiar circles_2, el diametro es -5 de circle2_3 */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid;
+}
+
+.circle1_3 { /* copiar circle_2, mismo diametro, +600 left*/
+  width: 470px;
+  height: 470px;
+  border-radius: 50%;
+  border: 3px solid;
+  position: absolute;
+  top: 610px;
+  left: 1300px;
+}
+
+.circle2_3 { /* copiar circle_2, +600 left*/
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  border: 3px solid;
+  position: absolute;
+  top: 765px;
+  left: 1455px;
+}
+
+#one_3 {
+  position: absolute;
+  top: 730px;
+  left: 1307px;
+}
+
+#two_3 { /* copiar one_3, +40 top, -5 left */
+  position: absolute;
+  top: 770px;
+  left: 1302px;
+}
+
+#three_3 { /* copiar one_3, +53 top, +11 left */
+  position: absolute;
+  top: 823px;
+  left: 1313px;
+}
+
+#four_3 { /* copiar three_3, +67 top, +44 left */
+  position: absolute;
+  top: 890px;
+  left: 1357px;
+}
+
+#five_3 { /* copiar four_3, +30 top, +40 left */
+  position: absolute;
+  top: 910px;
+  left: 1390px;
+}
+
+#six_3 { /* copiar six_3, +14 top, +40 left */
+  position: absolute;
+  top: 924px;
+  left: 1430px;
+}
+
+#seven_3 { /* copiar six_3, +2 top, +40 left */
+  position: absolute;
+  top: 926px;
+  left: 1470px;
+}
+
+#eight_3 { /* copiar seven_3, -8 top, +40 left */
+  position: absolute;
+  top: 918px;
+  left: 1510px;
+}
+
+#nine_3 { /* copiar eight_3, -20 top, +40 left */
+  position: absolute;
+  top: 897px;
+  left: 1550px;
+}
+
+#ten_3 { /* copiar nine_3, -40 top, +40 left */
+  position: absolute;
+  top: 857px;
+  left: 1590px;
+}
+
+#eleven_3 { /* copiar ten_3, -27 top, +15 left */
+  position: absolute;
+  top: 830px;
+  left: 1605px;
+} 
+
+#twelve_3 { /* copiar eleven_3, -30 top, +10 left */
+  position: absolute;
+  top: 800px;
+  left: 1615px;
+}
+
+#thirteen_3 { /* copiar twelve_3, -40 top, +3 left */
+  position: absolute;
+  top: 760px;
+  left: 1618px;
+}
+
+#fourteen_3 { /* copiar twelve_3, -40 top, -8 left */
+  position: absolute;
+  top: 720px;
+  left: 1610px;
+}
